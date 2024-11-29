@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>//task-1
+    console.log("Task-1")
+        let array=[1,2,3,4,5,6,7,8,9,10]
+        let newarray=array.reduce((acc,val)=>{
+            // console.log(val)
+            return val+acc
+        },0)
+        console.log("The given numbers in the arrays")
+        console.log(array)
+        console.log("There sum is:")
+        console.log(newarray)
+        
+        console.log("Task-2")
+       
+            function Average(arr) {
+                const sum = arr.reduce((acc, curr) => acc + curr, 0);
+                return sum / arr.length;
+            }
+            
+            
+            const numbers = [1,2,3,4,5,6,7,8,9,10];
+            const average = Average(numbers);
+            console.log("The given numbers in the arrays")
+            console.log(numbers)
+            console.log("There Average is :")
+            console.log(average); 
+
+
+            console.log("Task-3")
+
+            const people = [
+             { name: "John", age: 17 },
+             { name: "Jane", age: 22 },
+             { name: "Jim", age: 15 },
+             { name: "Jack", age: 19 }
+                 ];
+
+             const adults = people.filter(person => person.age>= 18);
+
+             console.log("The given Array ")
+             console.log(people)
+             console.log("The Adults in the Array")
+               console.log(adults);
+
+
+            
+           
+
+
+    </script>
+</body>
+</html>
